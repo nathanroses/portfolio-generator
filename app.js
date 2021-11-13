@@ -32,7 +32,6 @@ const promptUser = () => {
   ]);
 };
  
- promptUser().then(answers => console.log(answers));
 
 
  const promptProject = () => {
@@ -57,7 +56,7 @@ const promptUser = () => {
             type: 'checkbox',
             name: 'languages',
             message: 'What did you build this project with?',
-            choises: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+            choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
          },
          {
             type: 'input',
@@ -79,6 +78,11 @@ const promptUser = () => {
 
      ]);
  };
+
+ promptUser()
+    .then(answers => console.log(answers))
+    .then(promptProject)
+    .then(projectAnswers => console.log(projectAnswers));
 
 
 //fs.writeFile('index.html', generatePage(Name, github), err => {
