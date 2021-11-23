@@ -1,22 +1,19 @@
 {
-  "name": "portfolio-generator",
+  "name": "project",
   "version": "1.0.0",
-  "description": "npm",
+  "description": "",
   "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/sample.js",
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nathanroses/portfolio-generator.git"
-  },
-  "author": "nathan rose",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nathanroses/portfolio-generator/issues"
-  },
-  "homepage": "https://github.com/nathanroses/portfolio-generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^7.0.3"
   }
 }
